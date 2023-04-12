@@ -55,7 +55,7 @@ app.post('/increment', (req, res) => {
       res.send('Error occurred while updating counter');
     } else {
       console.log('Counter updated successfully!');
-      res.json({ count: counter });
+      res.send({ count: counter });
     }
   });
 });
