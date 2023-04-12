@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kayajan Counter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Kayajan Counter</h1>
+  <p>Current count: <span id="count">0</span></p>
+  <button id="increment">Click to increment</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      // Get the current count from the server and display it
+      $.get('/count', function(data) {
+        $('#count').text(data.count);
+      });
+
+      // Add an event listener to the button to increment the count
+      $('#increment').click(function() {
+        $.post('/increment', function(data) {
+          $('#count').text(data.count);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
