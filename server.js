@@ -46,7 +46,7 @@ app.get('/count', (req, res) => {
   res.json({ count: counter });
 });
 
-app.post('/increment', (req, res) => {
+app.get('/increment', (req, res) => {
   counter++;
   const collection = client.db('KCCounter').collection('counters');
   collection.updateOne({}, { $set: { value: counter } }, (err, result) => {
@@ -55,7 +55,7 @@ app.post('/increment', (req, res) => {
       res.send('Error occurred while updating counter');
     } else {
       console.log('Counter updated successfully!');
-      res.send({ count: counter });
+      res.json({ count: counter });
     }
   });
 });
