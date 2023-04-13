@@ -31,7 +31,6 @@
 	font-style: normal;
 }
 
-
 @font-face {
 	font-family: 'Neusa-DemiBold';
 	src: url('/themes/eft/fonts/Neusa-DemiBold.eot');
@@ -54,9 +53,8 @@ body {
 	padding: 0;
 	font-size: 16px;
 	font-family: 'Bender', sans-serif;
-	color: #E5E5E5;
-	background-color: #0e0e0e;
-	background-image: url(kcbackground.jpg);
+	color: #ff0000;
+	background-color: #0e0e0e00;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
