@@ -1,3 +1,487 @@
-.h1 {
-    font-family: "Copperplate";
-  }
+@font-face {
+	font-family: 'Bender';
+	src: url('/themes/eft/fonts/Bender.eot');
+	src: url('/themes/eft/fonts/Bender.eot?#iefix') format('embedded-opentype'),
+	url('/themes/eft/fonts/Bender.woff') format('woff'),
+	url('/themes/eft/fonts/Bender.ttf') format('truetype'),
+	url('/themes/eft/fonts/Bender.svg#benderregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bender-Light';
+	src: url('/themes/eft/fonts/Bender-Light.eot');
+	src: url('/themes/eft/fonts/Bender-Light.eot?#iefix') format('embedded-opentype'),
+	url('/themes/eft/fonts/Bender-Light.woff') format('woff'),
+	url('/themes/eft/fonts/Bender-Light.ttf') format('truetype'),
+	url('/themes/eft/fonts/Bender-Light.svg#benderlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bender-Bold';
+	src: url('/themes/eft/fonts/Bender-Bold.eot');
+	src: url('/themes/eft/fonts/Bender-Bold.eot?#iefix') format('embedded-opentype'),
+	url('/themes/eft/fonts/Bender-Bold.woff') format('woff'),
+	url('/themes/eft/fonts/Bender-Bold.ttf') format('truetype'),
+	url('/themes/eft/fonts/Bender-Bold.svg#benderbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Neusa-DemiBold';
+	src: url('/themes/eft/fonts/Neusa-DemiBold.eot');
+	src: url('/themes/eft/fonts/Neusa-DemiBold.eot?#iefix') format('embedded-opentype'),
+	url('/themes/eft/fonts/Neusa-DemiBold.woff') format('woff'),
+	url('/themes/eft/fonts/Neusa-DemiBold.ttf') format('truetype'),
+	url('/themes/eft/fonts/Neusa-DemiBold.svg#neusademibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Bender', sans-serif;
+	color: #E5E5E5;
+	background-color: #0e0e0e;
+	background-image: url(kcbackground.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	user-select: none;
+	overflow: hidden;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.container .content {
+	max-width: 1090px;
+	margin: 0 auto;
+	user-select: none;
+}
+
+.container .content .main {
+	margin: -80px 0 0 0;
+}
+
+.container .content .bandage_count {
+	margin: 17px 0 17px 0;
+}
+
+.container .content .bandage_count .title {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	text-transform: uppercase;
+	font-family: 'Bender', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 34px;
+	letter-spacing: 0.06em;
+	align-items: flex-end;
+	color: #C2CDCD;
+	margin: 0 0 5px 7px;
+	white-space: nowrap;
+	text-shadow: 1px 1px 1px #0e0e0e;
+}
+
+.container .content .bandage_count .title img {
+	width: 23px;
+	margin: 0 10px 3px 0;
+}
+
+.container .content .bandage_count_left .title {
+	font-size: 20px;
+	line-height: 23px;
+	margin: 0 0 5px 3px;
+}
+
+.container .content .bandage_count_left .title img {
+	width: 18px;
+	margin: 0 10px 2px 0;
+}
+
+.container .content .bandage_count .count_block .count {
+	position: relative;
+	z-index: 1;
+	white-space: nowrap;
+	font-family: 'Bender', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 80px;
+	line-height: 70px;
+	letter-spacing: 0.04em;
+	text-shadow: 1px 1px 1px #0e0e0e;
+	color: #ff0000;
+}
+
+.container .content .bandage_count_left .count_block .count {
+	color: #C2CDCD;
+	font-size: 52px;
+	line-height: 48px;
+	margin: 0 0 5px 2px;
+}
+
+.container .content .bandage_count .count_block {
+	position: relative;
+}
+
+.container .content .bandage_count .count_block .shadow {
+	background-image: url(/themes/eft/images/ge_shadow_count.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1070px;
+	height: 240px;
+	position: absolute;
+	top: -80px;
+	left: -350px;
+	z-index: 1;
+}
+
+.container .content .bandage_count_left .count_block .shadow {
+	background-image: url(/themes/eft/images/ge_shadow_left.png);
+}
+
+@media screen and (max-width: 1366px) {
+	.container .content .main {
+		margin: -60px 0 0 0;
+	}
+
+	.container .content .bandage_count {
+		margin: 14px 0 14px 0;
+	}
+
+	.container .content .bandage_count .title {
+		font-size: 24px;
+		line-height: 27px;
+		margin: 0 0 5px 5px;
+	}
+
+	.container .content .bandage_count .title img {
+		width: 20px;
+		margin: 0 7px 2px 0;
+	}
+
+	.container .content .bandage_count_left .title {
+		font-size: 18px;
+		line-height: 16px;
+	}
+
+	.container .content .bandage_count_left .title img {
+		width: 14px;
+		margin: 0 7px 2px 0;
+	}
+
+	.container .content .bandage_count .count_block .count {
+		font-size: 40px;
+		line-height: 35px;
+	}
+
+	.container .content .bandage_count_left .count_block .count {
+		font-size: 40px;
+		line-height: 30px;
+	}
+
+	.container .content .bandage_count .count_block .shadow {
+		width: 755px;
+		height: 170px;
+		top: -53px;
+		left: -225px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.container .content .bandage_count {
+		margin: 10px 0 10px 0;
+	}
+
+	.container .content .bandage_count .title {
+		font-size: 17px;
+		line-height: 19px;
+		margin: 0 0 0 2px;
+	}
+
+	.container .content .bandage_count .title img {
+		width: 13px;
+		margin: 0 5px 2px 0;
+	}
+
+	.container .content .bandage_count_left .title {
+		font-size: 12px;
+		line-height: 14px;
+		margin: 0 0 0 2px;
+	}
+
+	.container .content .bandage_count_left .title img {
+		width: 10px;
+		margin: 0 5px 2px 0;
+	}
+
+	.container .content .bandage_count .count_block .count {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.container .content .bandage_count_left .count_block .count {
+		font-size: 25px;
+		line-height: 28px;
+	}
+
+	.container .content .bandage_count .count_block .shadow {
+		width: 319px;
+		height: 92px;
+		top: -25px;
+		left: -58px;
+	}
+}
+
+#complete {
+	background-image: url(/themes/eft/images/ge_bandage_completed_background.png);
+}
+
+#complete .container .content {
+	width: 100%;
+}
+
+#complete .container .content .main {
+	margin: -65px 0 0 0;
+}
+
+#complete .container .content .main .title {
+	position: relative;
+	font-family: 'Bender', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 80px;
+	line-height: 90px;
+	letter-spacing: 0.1em;
+	color: #81B64D;
+	text-transform: uppercase;
+	text-align: center;
+	background-image: url(/themes/eft/images/ge_shadow_count.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 50px 0;
+}
+
+#complete .container .content .main .title .text {
+	position: relative;
+	z-index: 2;
+}
+
+#complete .container .content .main .line {
+	max-width: 960px;
+	width: 100%;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(129, 182, 77, 0), rgba(129, 182, 77, 1), rgba(129, 182, 77, 0));
+	margin: -25px auto 35px auto;
+}
+
+#complete .container .content .main .info {
+	text-align: center;
+}
+
+#complete .container .content .main .info .item {
+	font-family: 'Bender', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	margin: 0 0 12px 0;
+}
+
+#complete .container .content .main .info .item img {
+	width: 17px;
+	margin: 0 3px -1px 0;
+}
+
+#complete .container .content .main .info .item span {
+	font-weight: bold;
+}
+
+#complete .container .content .main .info .item span.time {
+	text-transform: none;
+}
+
+#complete .container .content .main a {
+	text-decoration: none;
+}
+
+#complete .container .content .main a .video_link {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 0 0 0;
+	padding: 70px 0;
+}
+
+#complete .container .content .main a .video_link:before {
+	content: " ";
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .6;
+	background-image: url(/themes/eft/images/ge_shadow_left.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transition: opacity 200ms ease-in-out;
+}
+
+#complete .container .content .main a .video_link:hover:before {
+	opacity: 1;
+	transition: opacity 200ms ease-in-out;
+}
+
+#complete .container .content .main a .video_link span {
+	margin: -3px 10px 0 10px;
+}
+
+#complete .container .content .main a .video_link {
+	font-family: 'Bender', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 45px;
+	letter-spacing: 0.1em;
+	color: #C2CDCD;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1366px) {
+	#complete .container .content {
+		max-width: 750px;
+	}
+
+	#complete .container .content .main {
+		margin: -50px 0 0 0;
+	}
+
+	#complete .container .content .main .title {
+		font-weight: 400;
+		font-size: 57px;
+		line-height: 64px;
+		letter-spacing: 0.1em;
+		padding: 40px 0;
+	}
+
+	#complete .container .content .main .line {
+		max-width: 702px;
+		margin: -20px auto 25px auto;
+	}
+
+	#complete .container .content .main .info .item {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 19px;
+		letter-spacing: 0.07em;
+		margin: 0 0 9px 0;
+	}
+
+	#complete .container .content .main .info .item img {
+		width: 12px;
+		margin: 0 3px -1px 0;
+	}
+
+	#complete .container .content .main a .video_link {
+		font-size: 30px;
+		margin: 10px 0 0 0;
+		padding: 50px 0;
+	}
+
+	#complete .container .content .main a .video_link span {
+		margin: -3px 10px 0 10px;
+	}
+
+	#complete .container .content .main a .video_link {
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: 0.1em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#complete .container .content {
+		max-width: 500px;
+	}
+
+	#complete .container .content .main {
+		margin: -30px 0 0 0;
+	}
+
+	#complete .container .content .main .title {
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: 0.1em;
+		padding: 20px 0;
+	}
+
+	#complete .container .content .main .line {
+		max-width: 300px;
+		margin: -10px auto 15px auto;
+	}
+
+	#complete .container .content .main .info .item {
+		font-weight: 400;
+		font-size: 9px;
+		line-height: 10px;
+		letter-spacing: 0.07em;
+		margin: 0 0 5px 0;
+	}
+
+	#complete .container .content .main .info .item img {
+		width: 6px;
+		margin: 0 2px 0 0;
+	}
+
+	#complete .container .content .main a .video_link {
+		font-size: 16px;
+		margin: 10px 0 0 0;
+		padding: 30px 0;
+	}
+
+	#complete .container .content .main a .video_link span {
+		margin: -3px 10px 0 10px;
+	}
+
+	#complete .container .content .main a .video_link {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+	}
+}
