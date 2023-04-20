@@ -6,6 +6,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 	<title>KayajanCounter</title>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
 </head>
 <body style="background-image: url('images/3.png');">
 <div class="container">
@@ -14,18 +18,15 @@
 			<div class="bandage_count">
 				<div class="title"><div class="text"><b>Times KC has not come back:</b></div></div>
 				<div class="count_block">
-					<div class="shadow"></div>
-					<div class="count">
-						<center>3</center>
-                    </div>
+					<div id="counter">0</div>
+					<button id="incrementButton">Add 1</button>
+					<script src="counter.js"></script>
 				</div>
 			</div>
 		</div>
 	</div>
 	<br>
-	<h3><mark><i>This counter started on 13/04/2023. All instances of not returning prior to this date are not counted.</i></mark></h3>
 </div>
-<script>
-</script>
 </body>
+<footer><mark><i>This counter started on 13/04/2023. All instances of not returning prior to this date are not counted.</i></mark></footer>
 </html>
