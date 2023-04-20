@@ -1,29 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-  <title>Kayajan Counter</title>
-  <link rel="stylesheet" href="styles.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+	<title>KayajanCounter</title>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
 </head>
-<body>
-  <h1>Kayajan Counter (CURRENTLY A WIP, DOES NOT WORK!!)</h1>
-  <h3>Current count: <span id="count">0</span></h3>
-  <button id="increment">One more time he didn't come back</button>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function() {
-      // Get the current count from the server and display it
-      $.get('/count', function(data) {
-        $('#count').text(data.count);
-      });
-
-      // Add an event listener to the button to increment the count
-      $('#increment').click(function() {
-        $.post('/increment', function(data) {
-          $('#count').text(data.count);
-        });
-      });
-    });
-  </script>
+<body style="background-image: url('images/3.png');">
+<div class="container">
+	<div class="content">
+		<div class="main">
+			<div class="bandage_count">
+				<div class="title"><div class="text"><b>Times KC has not come back:</b></div></div>
+				<div class="count_block">
+					<div id="counter">0</div>
+					<button id="incrementButton">Add 1</button>
+					<script src="counter.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+</div>
 </body>
+<footer><mark><i>This counter started on 13/04/2023. All instances of not returning prior to this date are not counted.</i></mark></footer>
 </html>

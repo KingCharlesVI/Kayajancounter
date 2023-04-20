@@ -1,3 +1,57 @@
-.h1 {
-    font-family: "Copperplate";
+body {
+	width: 100%;
+	min-height: 100%;
+	margin: auto;
+	font-family: 'Bender', sans-serif;
+	color: #ff0000;
+	background-color: #0e0e0e00;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#counter{
+	font-size: 96px;
+	margin: auto;
+	width: 100%;
+}
+
+#incrementButton {
+	background-color: gray;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
   }
+
+.container .content .bandage_count .title {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 34px;
+	letter-spacing: 0.06em;
+	align-items: flex-end;
+	color: #C2CDCD;
+	margin: 0 0 5px 7px;
+	white-space: nowrap;
+	text-shadow: 1px 1px 1px #0e0e0e;
+}
