@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-$mysqli = new mysqli('localhost', 'admin', 'Kayajancounter69', 'kayajancounter');
+$mysqli = new mysqli('127.0.0.1:3306', 'admin', 'Kayajancounter69', 'kayajancounter');
 
 // Start a transaction to ensure consistency
 $mysqli->begin_transaction();

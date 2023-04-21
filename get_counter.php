@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-$mysqli = new mysqli('localhost', 'admin', 'Kayajancounter69', 'kayajancounuter');
+$mysqli = new mysqli('127.0.0.1:3306', 'admin', 'Kayajancounter69', 'kayajancounuter');
 
 // Query the database for the current counter value
 $result = $mysqli->query("SELECT value FROM counter WHERE name='main'");
